@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "gutenberg-features/block-level-locking",
+	"version": "1.0.0",
+	"title": "Feature: Block-level Locking",
+	"category": "gutenberg-feature-examples",
+	"description": "",
+	"supports": {
+		"html": false,
+		"customClassName": false
+	},
+	"attributes": {
+		"lock": {
+			"type":"object",
+			"default":{
+				"move": true,
+				"remove": true
+			}
+		}
+	},
+	"textdomain": "gutenberg-feature-examples",
+	"editorScript": "file:../../../build/block-level-locking.js",
+	"editorStyle": "file:../../../build/block-level-locking.css",
+	"style": "file:../../../build/style-block-level-locking.css"
+}

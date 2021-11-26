@@ -1,0 +1,10 @@
+uploads
+index.php
+themes
+plugins/index.php
+plugins/gutenberg
+.DS_Store
+debug.log
+upgrade
+.vscode
+node_modules
