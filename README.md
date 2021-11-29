@@ -73,7 +73,7 @@ Because this is an attribute, it is possible to filter the values or change them
 
 This repository contains the `Feature: Block-level Locking` block that provides an example of a block that is locked but can be changed via Sidebar controls.
 
-There is also a filter in place to lock any instance of the `List` block.
+There is also a filter in place to lock any instance of the `List` block so that is cannot be moved or deleted.
 
 
 ## Development/Working with this repo.
