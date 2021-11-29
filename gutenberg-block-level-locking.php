@@ -73,3 +73,21 @@ add_action(
 		);
 	}
 );
+
+// Enqueue the block filters.
+add_action(
+	'enqueue_block_editor_assets',
+	function() {
+		$filter_assets_dir_path = plugin_dir_path( __FILE__ ) . 'build/block-filters.asset.php';
+		if ( file_exists( $filter_assets_dir_path ) ) {
+			$assets = require $filter_assets_dir_path;
+			wp_enqueue_script(
+				'gutenberg-block-level-locking-block-filters',
+				plugins_url( 'build/block-filters.js', __FILE__ ),
+				$assets['dependencies'],
+				$assets['version'],
+				true
+			);
+		}
+	}
+);

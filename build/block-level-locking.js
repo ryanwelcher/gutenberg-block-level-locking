@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
 /* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./includes/blocks/block-level-locking/editor.scss");
-/* harmony import */ var _components_source_code_display__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/source-code-display */ "./includes/blocks/components/source-code-display.js");
+/* harmony import */ var _components_source_code_display__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../components/source-code-display */ "./includes/components/source-code-display.js");
 
 
 /**
@@ -56,11 +56,11 @@ function Edit(_ref) {
     remove
   } = lock;
   const codeString = `"attributes":{\n\t"lock": {\n\t\t"type":"object",\n\t\t"default": {\n\t\t\t"move": ${move},\n\t\t\t"remove": ${remove}\n\t\t}\n\t}\n}`;
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Block Level Locking', 'gutenberg-feature-examples')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Whether a block can be moved or deleted can now be controlled via block attributes', 'gutenberg-feature-examples')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Use the select controls in the Block Inspector controls to change the status of this block and update the source code.', 'gutenberg-feature-examples')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Current Status', 'gutenberg-feature-examples')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, move === false ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Can be moved', 'gutenberg-feature-examples') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Cannot be moved', 'gutenberg-feature-examples')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, remove === false ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Can be removed', 'gutenberg-feature-examples') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Cannot be removed', 'gutenberg-feature-examples'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_source_code_display__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Block Level Locking', 'gutenberg-block-level-locking')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Whether a block can be moved or deleted can now be controlled via block attributes', 'gutenberg-block-level-locking')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Use the select controls in the Block Inspector controls to change the status of this block and update the source code.', 'gutenberg-block-level-locking')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Current Status', 'gutenberg-block-level-locking')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("ul", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, move === false ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Can be moved', 'gutenberg-block-level-locking') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Cannot be moved', 'gutenberg-block-level-locking')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", null, remove === false ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Can be removed', 'gutenberg-block-level-locking') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Cannot be removed', 'gutenberg-block-level-locking'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_source_code_display__WEBPACK_IMPORTED_MODULE_5__["default"], {
     sourceCode: codeString,
     lang: "json"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Locking Controls', 'gutenberg-feature-examples')
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Locking Controls', 'gutenberg-block-level-locking')
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
     label: "Move",
     value: move,
@@ -205,15 +205,15 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 function save() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Gutenberg Feature Examples – hello from the saved content!', 'gutenberg-feature-examples'));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Gutenberg Feature Examples – hello from the saved content!', 'gutenberg-block-level-locking'));
 }
 
 /***/ }),
 
-/***/ "./includes/blocks/components/source-code-display.js":
-/*!***********************************************************!*\
-  !*** ./includes/blocks/components/source-code-display.js ***!
-  \***********************************************************/
+/***/ "./includes/components/source-code-display.js":
+/*!****************************************************!*\
+  !*** ./includes/components/source-code-display.js ***!
+  \****************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -222,10 +222,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-syntax-highlighter */ "./node_modules/react-syntax-highlighter/dist/esm/prism.js");
 /* harmony import */ var react_syntax_highlighter_dist_esm_styles_prism__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-syntax-highlighter/dist/esm/styles/prism */ "./node_modules/react-syntax-highlighter/dist/esm/styles/prism/tomorrow.js");
-/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
-/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/compose */ "@wordpress/compose");
+/* harmony import */ var _wordpress_compose__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
 
@@ -236,8 +236,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /**
- * WordPress Dependencies
- */
+* WordPress Dependencies
+*/
 
 
 
@@ -248,19 +248,19 @@ const SourceCodeDisplay = _ref => {
     sourceCode,
     lang
   } = _ref;
-  const ref = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_1__.useCopyToClipboard)(sourceCode, () => {
+  const ref = (0,_wordpress_compose__WEBPACK_IMPORTED_MODULE_2__.useCopyToClipboard)(sourceCode, () => {
     alert('copied');
   });
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_syntax_highlighter__WEBPACK_IMPORTED_MODULE_4__["default"], {
     language: lang,
     style: react_syntax_highlighter_dist_esm_styles_prism__WEBPACK_IMPORTED_MODULE_5__["default"]
-  }, sourceCode), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
+  }, sourceCode), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.Button, {
     type: "secondary",
     ref: ref,
     icon: "clipboard",
     showTooltip: true,
-    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Copy source code", 'gutenberg-feature-examples')
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Copy source code", 'gutenberg-feature-examples')));
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Copy source code", 'gutenberg-block-level-locking')
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)("Copy source code", 'gutenberg-block-level-locking')));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SourceCodeDisplay);
@@ -29105,7 +29105,7 @@ function _unsupportedIterableToArray(o, minLen) {
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"gutenberg-features/block-level-locking","version":"1.0.0","title":"Feature: Block-level Locking","category":"gutenberg-feature-examples","description":"","supports":{"html":false,"customClassName":false},"attributes":{"lock":{"type":"object","default":{"move":true,"remove":true}}},"textdomain":"gutenberg-feature-examples","editorScript":"file:../../../build/block-level-locking.js","editorStyle":"file:../../../build/block-level-locking.css","style":"file:../../../build/style-block-level-locking.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"gutenberg-features/block-level-locking","version":"1.0.0","title":"Feature: Block-level Locking","category":"gutenberg-block-level-locking","description":"","supports":{"html":false,"customClassName":false},"attributes":{"lock":{"type":"object","default":{"move":true,"remove":true}}},"textdomain":"gutenberg-block-level-locking","editorScript":"file:../../../build/block-level-locking.js","editorStyle":"file:../../../build/block-level-locking.css","style":"file:../../../build/style-block-level-locking.css"}');
 
 /***/ }),
 
@@ -29298,7 +29298,7 @@ module.exports = JSON.parse('{"0":"�","128":"€","130":"‚","131":"ƒ","132"
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkgutenberg_feature_examples"] = self["webpackChunkgutenberg_feature_examples"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkgutenberg_block_level_locking"] = self["webpackChunkgutenberg_block_level_locking"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();

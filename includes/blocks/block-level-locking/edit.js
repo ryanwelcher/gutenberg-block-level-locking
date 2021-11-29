@@ -9,7 +9,7 @@ import { SelectControl, PanelBody } from '@wordpress/components';
  * Internal dependencies
  */
 import './editor.scss';
-import SourceCodeDisplay from '../components/source-code-display';
+import SourceCodeDisplay from '../../components/source-code-display';
 
 /**
  * The edit function describes the structure of your block in the context of the
