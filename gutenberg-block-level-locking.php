@@ -51,10 +51,25 @@ add_action(
 	}
 );
 
-// Register a custom template for the Post post type.
+// Register a custom post type with a default template.
 add_action(
 	'init',
 	function() {
-
+		register_post_type(
+			'block-level-locking',
+			array(
+				'labels'        => array(
+					'name' => __( 'Block Level Locking', 'gutenberg-block-level-locking' ),
+				),
+				'public'        => true,
+				'show_in_rest'  => true,
+				'template'      => array(
+					array( 'core/paragraph', array( 'content' => 'This is the locked paragraph above' ) ),
+					array( 'gutenberg-features/block-level-locking' ),
+					array( 'core/paragraph', array( 'content' => 'This is the locked paragraph below' ) ),
+				),
+				'template_lock' => 'all',
+			)
+		);
 	}
 );
