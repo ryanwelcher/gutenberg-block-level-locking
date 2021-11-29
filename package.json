@@ -1,5 +1,5 @@
 {
-	"name": "gutenberg-feature-examples",
+	"name": "gutenberg-block-level-locking",
 	"version": "0.1.0",
 	"author": "The WordPress Contributors",
 	"license": "GPL-2.0-or-later",
@@ -16,7 +16,7 @@
 		"@wordpress/scripts": "^19.2.2"
 	},
 	"dependencies": {
-		"@wordpress/components": "^19.0.5",
+		"@wordpress/components": "^19.1.0",
 		"@wordpress/compose": "^5.0.6",
 		"@wordpress/i18n": "^4.2.4",
 		"prismjs": "^1.25.0",

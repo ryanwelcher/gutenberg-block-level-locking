@@ -4,7 +4,7 @@
 	"name": "gutenberg-features/nested-block-locking",
 	"version": "1.0.0",
 	"title": "Feature: Nested Block Level Locking",
-	"category": "gutenberg-feature-examples",
+	"category": "gutenberg-block-level-locking",
 	"description": "",
 	"supports": {
 		"html": false,
@@ -20,7 +20,7 @@
 			}
 		}
 	},
-	"textdomain": "gutenberg-feature-examples",
+	"textdomain": "gutenberg-block-level-locking",
 	"editorScript": "file:../../../build/nested-block-locking.js",
 	"editorStyle": "file:../../../build/nested-block-locking.css",
 	"style": "file:../../../build/style-nested-block-locking.css"

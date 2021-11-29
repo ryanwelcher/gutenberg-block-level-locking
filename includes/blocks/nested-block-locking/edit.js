@@ -24,17 +24,17 @@ export default function Edit ({attributes:{lock}, setAttributes } ) {
 
 	return (
 		<div { ...useBlockProps() } >
-			<h3>{__('Nested Block Locking', 'gutenberg-feature-examples')}</h3>
+			<h3>{__('Nested Block Locking', 'gutenberg-block-level-locking')}</h3>
 			<p      >
 				{ __(
 					'When a block is nested inside an InnerBlocks instance, the lock attribute will override any templateLock prop. The InnerBlocks instance below has templateLock set to "all"',
-					'gutenberg-feature-examples'
+					'gutenberg-block-level-locking'
 				) }
 			</p>
 			<p      >
 				{ __(
 					'Use the select controls in the Block Inspector controls to change the lock status of the nested block to see how it affects the InnerBlocks templateLock setting.',
-					'gutenberg-feature-examples'
+					'gutenberg-block-level-locking'
 				) }
 			</p>
 			<InnerBlocks

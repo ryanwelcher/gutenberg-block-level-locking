@@ -4,7 +4,7 @@
 	"name": "gutenberg-features/block-level-locking",
 	"version": "1.0.0",
 	"title": "Feature: Block-level Locking",
-	"category": "gutenberg-feature-examples",
+	"category": "gutenberg-block-level-locking",
 	"description": "",
 	"supports": {
 		"html": false,
@@ -19,7 +19,7 @@
 			}
 		}
 	},
-	"textdomain": "gutenberg-feature-examples",
+	"textdomain": "gutenberg-block-level-locking",
 	"editorScript": "file:../../../build/block-level-locking.js",
 	"editorStyle": "file:../../../build/block-level-locking.css",
 	"style": "file:../../../build/style-block-level-locking.css"

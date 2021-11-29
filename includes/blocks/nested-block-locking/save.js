@@ -27,7 +27,7 @@ export default function save() {
 		<p { ...useBlockProps.save() }>
 			{ __(
 				'Gutenberg Feature Examples – hello from the saved content!',
-				'gutenberg-feature-examples'
+				'gutenberg-block-level-locking'
 			) }
 		</p>
 	);
