@@ -74,6 +74,32 @@ add_action(
 	}
 );
 
+// Register a block pattern.
+add_action(
+	'init',
+	function() {
+		register_block_pattern(
+			'block-level-locking/test-pattern',
+			array(
+				'title'       => __( 'Block Level Locking', 'gutenberg-block-level-locking' ),
+				'description' => _x( 'A full locked block pattern', 'Block pattern description', 'gutenberg-block-level-locking' ),
+				'categories'  => array( 'text' ),
+				'content'     => '<!-- wp:paragraph { "dropCap": true, "lock":{"remove": true, "move":true}} -->
+				<p>This is a paragraph block that will contain cool text.</p>
+				<!-- /wp:paragraph -->
+
+				<!-- wp:image {"id":309,"sizeSlug":"full","linkDestination":"none","lock":{"remove": true, "move":true}} -->
+				<figure class="wp-block-image size-full"><img src="https://s.w.org/images/core/5.8/architecture-04.jpg" alt="" class="wp-image-309"/><figcaption>This is fine!</figcaption></figure>
+				<!-- /wp:image -->
+
+				<!-- wp:paragraph {"lock":{"remove": true, "move":true}} -->
+				<p>This paragraph will also contain some great stuff</p>
+				<!-- /wp:paragraph -->',
+			)
+		);
+	}
+);
+
 // Enqueue the block filters.
 add_action(
 	'enqueue_block_editor_assets',
