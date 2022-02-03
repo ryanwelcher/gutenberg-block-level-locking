@@ -7,6 +7,8 @@
 ## Overview
 Theme/plugin developer can now manage when a block can be moved or deleted after being inserted. This applies to both core and custom blocks. This is done by registering the block with the new `lock` attribute. It's properties are `move` and `remove` that both accept boolean values with `true` representing locked and `false` representing unlocked. This attributes is added to all blocks with a default value of `undefined`
 
+[Dev Note](https://make.wordpress.org/core/2022/01/08/locking-blocks-in-wordpress-5-9/)
+
 ## Examples:
 
 ### Move and Remove locked.
